@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  {{>check}}
+
+  <div class="card text-center" id="card2" style="width: 18rem;">
+    <div class="card-body">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter City Name..." aria-label="City"
+          aria-describedby="button-addon2" id="cname">
+
+        <button class="btn btn-outline-secondary" id="btn" type="button" id="button-addon2">Search</button>
+      </div>
+      {{!-- <h5 class="card-title" id="outCity">City Name</h5>
+
+  <h6 class="card-title">Temp <span class="card-text" id="mtemp"></span></h6> 
+  <h6 class="card-title">Max <span class="card-text" id="max"></span></h6> 
+  <h6 class="card-title">Min <span class="card-text" id="min"></span></h6>  --}}
+
+   <h4 class="mb-1 sfw-normal" id="outCity">City Name</h4>
+            <p class="mb-2">Current temperature: <strong id="mtemp"></strong> &#8451;</p>
+            <p>Max: <strong id="max"></strong> &#8451; , Min: <strong id="min"></strong>  &#8451;</p>
+
+    </div>
+  </div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
