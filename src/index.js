@@ -1,9 +1,11 @@
+console.log("Hello")
+
 const express = require("express");
 const app = express();
 const path = require("path");
 const hbs = require("hbs");
 const request = require("request");
-
+const port=process.env.PORT || 8000;
 ////////////////////////////////////////////////////////public set
 const static_path = path.join(__dirname, "../public");
 app.use(express.static(static_path));
@@ -36,7 +38,7 @@ app.get("", (req, res) => {
   res.render("index");
 })
 ///////////////////////////////////////////port
-app.listen(8000, () => {
+app.listen(port, () => {
   console.log("Server Is Running");
 });
 

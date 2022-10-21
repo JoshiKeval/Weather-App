@@ -4,7 +4,7 @@ const button=document.getElementById('btn');
 
 button.addEventListener('click',()=>{
     let city=formSearch.value;
-    fetch(`http://localhost:8000/weather?address=${city}`).then((data)=>{
+    fetch(`/weather?address=${city}`).then((data)=>{
     data.json().then(val=>{
 
         document.getElementById('outCity').innerHTML=city;
